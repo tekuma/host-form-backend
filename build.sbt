@@ -22,3 +22,6 @@ libraryDependencies ++= Seq(
 routesGenerator := InjectedRoutesGenerator
 
 enablePlugins(PlayJava, PlayEbean)
+
+// Heroku
+herokuAppName in Compile := "ancient-sea-8793"
