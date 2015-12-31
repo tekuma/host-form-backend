@@ -1,0 +1,16 @@
+New log file opened at Thu Dec 31 10:59:35 PST 2015 by 29722@Feis-MacBook-Pro.local
+Taking next connection to: 62852
+New client attempting to connect on port: 62853-62852
+  Address = /10.0.0.7:62852
+This client on port 62853 has uuid fd1d653d-c371-433f-b4ab-64c3d5e960de configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-fd1d653d-c371-433f-b4ab-64c3d5e960de
+Taking next connection to: 62852
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62852
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 29722@Feis-MacBook-Pro.local logs at Thu Dec 31 11:05:35 PST 2015, goodbye.
