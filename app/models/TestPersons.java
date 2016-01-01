@@ -16,7 +16,7 @@ import play.db.ebean.Model;
 public class TestPersons extends Model {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     public int id;
 
