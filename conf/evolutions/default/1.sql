@@ -3,25 +3,22 @@
 
 # --- !Ups
 
-create table person (
-  id                        varchar(255) not null,
-  name                      varchar(255),
-  due_date                  timestamp,
-  constraint pk_person primary key (id))
+create table test_persons (
+  id                        integer auto_increment not null,
+  user_name                 varchar(255) not null,
+  biography                 varchar(255),
+  time_stamp                datetime(6),
+  constraint pk_test_persons primary key (id))
 ;
-
-create sequence person_seq;
 
 
 
 
 # --- !Downs
 
-SET REFERENTIAL_INTEGRITY FALSE;
+SET FOREIGN_KEY_CHECKS=0;
 
-drop table if exists person;
+drop table test_persons;
 
-SET REFERENTIAL_INTEGRITY TRUE;
-
-drop sequence if exists person_seq;
+SET FOREIGN_KEY_CHECKS=1;
 

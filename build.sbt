@@ -8,13 +8,9 @@ name := "be-tekuma-host-form"
 version := Source.fromFile("VERSION").getLines().buffered.head
 organization := "com.tekuma.host.form"
 
-scalaVersion := "2.11.7"
-
 libraryDependencies ++= Seq(
-  javaJdbc,
-  cache,
-  javaWs,
-  "junit" % "junit" % "4.10"
+  "mysql" % "mysql-connector-java" % "5.1.38",
+  "junit" % "junit" % "4.12"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the

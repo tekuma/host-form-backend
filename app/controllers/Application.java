@@ -4,7 +4,7 @@ import static play.libs.Json.toJson;
 
 import java.util.List;
 
-import models.Person;
+import models.TestPersons;
 import play.data.Form;
 import play.db.ebean.Transactional;
 import play.mvc.Controller;
@@ -19,14 +19,14 @@ public class Application extends Controller {
 
     @Transactional
     public Result addPerson() {
-        Person person = Form.form(Person.class).bindFromRequest().get();
-        person.save();
-        return redirect(routes.Application.index());
+        TestPersons testPersons = Form.form(TestPersons.class).bindFromRequest().get();
+        testPersons.save();
+        return redirect(routes.Application.getPersons());
     }
 
     @Transactional
     public Result getPersons() {
-        List<Person> persons = Person.find.all();
-        return ok(toJson(persons));
+        List<TestPersons> testPersonses = TestPersons.find.all();
+        return ok(toJson(testPersonses));
     }
 }
